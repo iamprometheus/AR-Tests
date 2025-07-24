@@ -6,23 +6,28 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true
+    "packagerOpts": {
+      "config": "metro.config.js"
     },
+    "plugins": ["@reactvision/react-viro"],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.ar.tests"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "yourprojectid"
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "owner": "yourexpoaccount"
   }
 }
